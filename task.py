@@ -22,7 +22,7 @@ while cap.isOpened():
     if not ret:
         break
 
-    # Define mask range in HSV
+    # Define mask range in HSV. Change here to change the object colour
     hsv = cv2.cvtColor(frame_ndarray, cv2.COLOR_BGR2HSV)
     lower_blue = np.array([95, 10, 18])
     upper_blue = np.array([135, 255, 255])
